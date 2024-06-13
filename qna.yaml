@@ -1,0 +1,41 @@
+created_by: IBM
+domain: law
+seed_examples:
+- answer: 'No, this practice is not compliant with the EU AI Act. According to Article 5(f),
+it is prohibited to use AI systems to infer emotions of a natural person in the workplace,
+unless it is intended for medical or safety reasons. Therefore, using AI to monitor and manipulate employees''
+emotions for productivity purposes violates this article.'
+  question: 'A company uses an AI system to monitor and manipulate employees''
+  emotions at the workplace to improve productivity. Is this practice compliant with the EU AI Act?'
+- answer: 'This violates Article 11 of the EU AI Act. The technical documentation
+must be drawn up before the high-risk AI system is placed on the market or put
+into service and kept up-to-date. This documentation should demonstrate the system''s
+compliance with the relevant requirements and provide clear information for authorities
+to assess compliance.'
+  question: 'An AI provider launches a high-risk AI system without preparing or
+  maintaining the required technical documentation. What article does this violate,
+  and what is the requirement?'
+- answer: 'No, this practice is prohibited under Article 5(a) of the EU AI Act.
+AI systems that deploy subliminal or manipulative techniques beyond a person''s
+consciousness to materially distort their behavior and impair their ability to
+make informed decisions are banned. Such actions can cause significant harm to individuals or groups.'
+  question: 'Can a company use an AI system to subtly influence consumer behavior without their awareness to boost sales?'
+- answer: 'This violates Article 13 of the EU AI Act. High-risk AI systems must be
+designed to ensure sufficient transparency, enabling deployers to interpret the system''s
+output and use it appropriately. The system must come with clear instructions, including
+information about its capabilities, limitations, and any potential risks.'
+  question: 'A high-risk AI system used for financial credit scoring lacks transparency, making it difficult for users to
+  understand and interpret the output. What article is violated, and what does it require?'
+- answer: 'This violates Article 5(h) and the associated requirements for the use of
+real-time remote biometric identification systems. Such systems can only be used for
+specific law enforcement purposes, and each use must be subject to prior authorization
+by a judicial authority or an independent administrative authority. Unauthorized use
+is not compliant with the EU AI Act.'
+  question: 'A company uses a real-time remote biometric identification system in a public space without obtaining
+  prior authorization. What article does this violate, and what are the requirements?'
+task_description: 'Your task is to generate potential use case questions and answers that align with specific sections of the EU AI Act, using the provided context as outlined in the EU AI Act and examples for reference.'
+document:
+  repo: https://github.com/syedaameena/WPL-InstructLab
+  commit: d30b877
+  patterns:
+  - eu.md
